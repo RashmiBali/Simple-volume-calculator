@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class calculator {
+  public static void main(String args[]){
+		Scanner y = new Scanner(System.in);
+		double radius, pi, height, volume, radius2, area;
+		pi = 3.14159265358979323846264338327950288471693993751058209749445923078164062862998628034825342117067982;
+		System.out.println("Enter radius (in cm): ");
+		radius = y.nextDouble();
+		System.out.println("Enter height (in cm): ");
+		height = y.nextDouble();
+		radius2 = radius * radius;
+		area = radius2 * pi;
+		volume = area * height;
+		System.out.print("The volume of your cylinder is ");
+		System.out.print(volume);
+		System.out.println("mL");
+	}
+}
